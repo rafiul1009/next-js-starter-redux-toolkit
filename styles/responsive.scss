@@ -1,0 +1,47 @@
+@import "variables";
+
+/* Full HD - TV Layout: Common */
+@media only screen and (min-width: 2200px) and (max-width: 4000px) {
+}
+/* Full HD - TV Layout: 2560px. */
+@media only screen and (min-width: 2560px) and (max-width: 4000px) {
+}
+/* Full HD - Small TV Layout: 2400px. */
+@media only screen and (min-width: 2200px) and (max-width: 2559px) {
+}
+/* HD Layout: 1920px. */
+@media only screen and (min-width: 1601px) and (max-width: 2200px) {
+}
+/* Laptop with HDPI: 1440px */
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+}
+/* Normal PC: 1366px */
+@media only screen and (min-width: 1301px) and (max-width: 1399px) {
+}
+/* Laptop with MDPI: 1280px */
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+}
+/* Medium Layout(Vertical): 1080px. */
+@media only screen and (max-width: 1200px) {
+}
+/* Medium Layout(iPad Pro): 1024px. */
+@media only screen and (max-width: 1050px) {
+}
+/* Tablet Layout: 768px. */
+@media only screen and (max-width: 991px) {
+}
+/* Mobile Layout: 375px. */
+@media only screen and (max-width: 767px) {
+}
+/* Wide Mobile Layout(Nexus 7): 600px. */
+@media only screen and (max-width: 610px) {
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 500px) {
+}
+/* Mobile Layout(Samsung Galaxy S5): 360px. */
+@media only screen and (max-width: 370px) {
+}
+/* Mobile Layout(iPhone 4): 320px. */
+@media only screen and (max-width: 330px) {
+}

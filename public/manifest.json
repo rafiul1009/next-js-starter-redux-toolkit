@@ -1,0 +1,39 @@
+{
+    "theme_color": "#01B2FF",
+    "background_color": "#e6e6e6",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Website Author",
+    "short_name": "Author",
+    "description": "Website Progressive Web App",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-196x196.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import 'variables';
+
+
+a,
+a:hover,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+	outline: 0 solid !important;
+	text-decoration: none;
+}
+a {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	color: $blue;
+}
+button {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	background: transparent;
+	border: none;
+}
+a:hover {
+	color: #000;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+
+*:disabled {
+	cursor: not-allowed;
+}
+/* html {
+	overflow-x: hidden;
+} */
+
+body {
+	/* overflow-x: hidden; */
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	background-color: #fff;
+	color: $blue;
+	font-family: "Poppins", sans-serif;
+}
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #444 #f1f1f1;
+}
+::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #444;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #333;
+}
+
+::-moz-selection {
+	background: #1d1d1d;
+	color: #fff;
+}
+::selection {
+	background: #1d1d1d;
+	color: #fff;
+}
+
+.common-padding {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.common-padding-top {
+	padding-top: 50px;
+}
+.common-padding-bottom {
+	padding-bottom: 50px;
+}
+
+.ff-poppins {
+	font-family: "Poppins", sans-serif;
+}
+.ff-roboto {
+	font-family: "Roboto", sans-serif;
+}
+
+.fw-light {
+	font-weight: 300 !important;
+}
+.fw-normal {
+	font-weight: 400 !important;
+}
+.fw-medium {
+	font-weight: 500 !important;
+}
+.fw-semibold {
+	font-weight: 600 !important;
+}
+.fw-bold {
+	font-weight: 700 !important;
+}
+.fw-bolder {
+	font-weight: 800 !important;
+}
+
+@each $size in $font-sizes {
+	.fs-#{$size} {
+		font-size: #{$size * (30/40)}px;
+	}
+}
+
+@each $height in $line-heights {
+	.lh-#{$height} {
+		line-height: #{$height * (30/40)}px;
+	}
+}
+
+@each $spacing in $letter-spacing {
+	.ls-#{$spacing} {
+		letter-spacing: calc(calc(($spacing * 15) / 1000) * 1px);
+	}
+}
+
+@each $radius in $border-radius {
+	.radius-#{$radius} {
+		border-radius: #{$radius * (30/40)}px !important;
+	}
+	.radius-top-left-#{$radius} {
+		border-top-left-radius: #{$radius * (30/40)}px !important;
+	}
+	.radius-top-right-#{$radius} {
+		border-top-right-radius: #{$radius * (30/40)}px !important;
+	}
+	.radius-bottom-left-#{$radius} {
+		border-bottom-left-radius: #{$radius * (30/40)}px !important;
+	}
+	.radius-bottom-right-#{$radius} {
+		border-bottom-right-radius: #{$radius * (30/40)}px !important;
+	}
+}
+
+@each $gutter in $gutters {
+	.gx-#{$gutter} {
+		margin-left: #{$gutter * -1}px;
+		margin-right: #{$gutter * -1}px;
+	}
+
+	.gx-#{$gutter} > [class^="col-"] {
+		padding-left: #{$gutter}px;
+		padding-right: #{$gutter}px;
+	}
+}
+
+@each $width in $width-percentage {
+	.w-#{$width} {
+		width: $width * 1%;
+	}
+}
+@each $height in $height-percentage {
+	.h-#{$height} {
+		height: $height * 1%;
+	}
+}
+@each $index in $z-index {
+	.zi-#{$index} {
+		z-index: $index;
+	}
+}
+
+@each $color in $text-colors {
+	.text-#{nth($color, 1)} {
+		color: #{nth($color, 2)};
+	}
+}
+
+@each $color in $background-colors {
+	.bg-#{nth($color, 1)} {
+		background-color: #{nth($color, 2)};
+	}
+}
+@each $color in $border-colors {
+	.border-#{nth($color, 1)} {
+		border: 1px solid #{nth($color, 2)};
+	}
+}
+
+.text-blue.hover:hover {
+	color: darken($blue, 10%);
+}
+
+.bg-blue.hover:hover {
+	background-color: darken($blue, 10%);
+}
+
+/* CSS START */
+.header-logo {
+	height: 70px;
+}
